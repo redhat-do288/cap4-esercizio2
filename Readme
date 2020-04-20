@@ -1,0 +1,14 @@
+SETUP
+creare image stream php-test (nel progetto openshift come utente admin) da registry.access.redhat.com/rhscl/php-70-rhel7
+
+
+TASK
+Deploy app
+	project name->trigger-builds
+	app name->trigger
+	repo->https://github.com/marcorosati/trigger-builds.git
+	image stream-> php-test
+Change metadata image (per esempio aggiungendo FROM e MAINTAINER in un docker file)e aggiornare is
+
+
+	
